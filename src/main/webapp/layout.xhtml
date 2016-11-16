@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+<h:head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<h:outputStylesheet library="webjars"
+		name="font-awesome/4.5.0/css/font-awesome-jsf.css" />
+
+	<title>AlgaWorks | Primefaces DefaultCommand</title>
+</h:head>
+
+<h:body>
+	<h:form>
+		<p:menubar>
+			<p:submenu label="Exemplos" icon="fa fa-navicon">
+				<p:menuitem value="Upload Básico" outcome="upload-basico" />
+
+				<p:menuitem value="Upload Avançado" outcome="upload-avancado" />
+			</p:submenu>
+
+
+			<p:submenu label="AlgaWorks" icon="ui-icon-extlink">
+				<p:menuitem value="Site" url="http://www.algaworks.com"
+					icon="ui-icon-extlink" />
+
+				<p:menuitem value="Facebook" url="http://www.facebook.com/algaworks"
+					icon="ui-icon-extlink" />
+
+				<p:menuitem value="YouTube" url="http://www.youtube.com/algaworks"
+					icon="ui-icon-extlink" />
+
+				<p:menuitem value="Github" url="http://github.com/algaworks"
+					icon="ui-icon-extlink" />
+
+				<p:menuitem value="Blog" url="http://blog.algaworks.com"
+					icon="ui-icon-extlink" />
+			</p:submenu>
+
+		</p:menubar>
+	</h:form>
+
+	<p:spacer height="30px" />
+
+	<h:panelGroup layout="block">
+		<h1>
+			<ui:insert name="head" />
+		</h1>
+
+		<ui:insert name="body" />
+	</h:panelGroup>
+</h:body>
+</html>
